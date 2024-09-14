@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:contentDescription="Повернутися"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"/>
+
+    <!-- Шлях до іконки: @drawable/baseline_arrow_back_ios_24 -->
+    <!-- Кнопка повернення без меж (borderless) -->
+
+
+    <!-- Введення компонентів палива -->
+    <EditText
+        android:id="@+id/input_H"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть H (водень), %" />
+
+    <EditText
+        android:id="@+id/input_C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть C (вуглець), %" />
+
+    <EditText
+        android:id="@+id/input_S"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть S (сірка), %" />
+
+    <EditText
+        android:id="@+id/input_N"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть N (азот), %" />
+
+    <EditText
+        android:id="@+id/input_O"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть O (кисень), %" />
+
+    <EditText
+        android:id="@+id/input_W"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть W (волога), %" />
+
+    <EditText
+        android:id="@+id/input_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть A (зола), %" />
+
+    <!-- Кнопка для старту розрахунків -->
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Розрахувати" />
+
+    <!-- Виведення -->
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Результати будуть тут"
+        android:textSize="16sp" />
+</LinearLayout>
